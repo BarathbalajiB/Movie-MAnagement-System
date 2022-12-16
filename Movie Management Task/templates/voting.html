@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+    <h1>Voting </h1>
+    <form action="/voting" method="post">
+
+        <label for="m_name">Enter te movie name</label>
+        <input type="text" name="name" id="m_name">
+        <label for="m_votes">Selecct Voting</label>
+        <select name="vote" id="m_votes">
+            <option value="">--Select--</option>
+            <option value="upvote">upvote</option>
+            <option value="downvote">downvote</option>
+        </select>
+        <input type="submit" value="submit">
+        Back to home <a href="{{url_for('dashboard')}}"> click here</a><br>
+
+    </form>
+
+    
+</body>
+</html>
